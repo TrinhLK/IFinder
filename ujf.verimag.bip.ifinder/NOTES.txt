@@ -1,0 +1,2 @@
+JNI error:
+copy libs from IFinder/compiler/distribution/lib/*.jar to IFinder/ujf...ifinder/cli-lib/
