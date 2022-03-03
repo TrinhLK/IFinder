@@ -7,5 +7,5 @@ package ujf.verimag.bip.userinterface.cli;
   * use "svn annotate" and BLAME the one who has commited it !
   */ 
 public class Version { 
- public static final String VERSION = "2021.10.080942-DEV"; 
+ public static final String VERSION = "2022.02.060919-DEV"; 
 } 

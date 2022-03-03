@@ -1,0 +1,7 @@
+# atom control invariants
+-at Route -a atom-control
+-at Monitor -a atom-control
+-at Spec1 -a atom-control
+
+# compound control reachability
+-ct camelrouteCompound -a control-reachability

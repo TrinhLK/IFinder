@@ -1,0 +1,116 @@
+trinhlk@ubuntu:~/Downloads/IFinder/ujf.verimag.bip.ifinder/examples/mlamp$ ../../bin/ichecker.sh -p mlamp -r mlampCompound -i mlamp-scheme.inv -s mlamp-deadlock.pro -v
+[ichecker] load package 'mlamp' ... ok
+[ichecker] locate component type 'mlampCompound' ... ok
+[ichecker] instantiate component type 'mlampCompound' ... ok
+[ichecker] process invariant specification 'mlamp-scheme.inv' ...
+[ichecker] process line '-at VirtualMachine -a atom-control' ...
+[ichecker] locate atom type 'VirtualMachine' ... ok
+[ichecker] instantiate component type 'VirtualMachine' ... ok
+[ichecker] check if 'atom-control' is applicable ... yes
+[ichecker] generate invariant by 'atom-control' ... 
+[ichecker] generate invariant by 'atom-control' done
+[ichecker] process line '-at Tomcat -a atom-control' ...
+[ichecker] locate atom type 'Tomcat' ... ok
+[ichecker] instantiate component type 'Tomcat' ... ok
+[ichecker] check if 'atom-control' is applicable ... yes
+[ichecker] generate invariant by 'atom-control' ... 
+[ichecker] generate invariant by 'atom-control' done
+[ichecker] invariant recorded for 't2.'
+[ichecker] invariant recorded for 't1.'
+[ichecker] invariant recorded for 't0.'
+[ichecker] process line '-at Apache -a atom-control' ...
+[ichecker] locate atom type 'Apache' ... ok
+[ichecker] instantiate component type 'Apache' ... ok
+[ichecker] check if 'atom-control' is applicable ... yes
+[ichecker] generate invariant by 'atom-control' ... 
+[ichecker] generate invariant by 'atom-control' done
+[ichecker] invariant recorded for 'as1.'
+[ichecker] invariant recorded for 'as0.'
+[ichecker] process line '-at MySQL -a atom-control' ...
+[ichecker] locate atom type 'MySQL' ... ok
+[ichecker] instantiate component type 'MySQL' ... ok
+[ichecker] check if 'atom-control' is applicable ... yes
+[ichecker] generate invariant by 'atom-control' ... 
+[ichecker] generate invariant by 'atom-control' done
+[ichecker] invariant recorded for 'm0.'
+[ichecker] invariant recorded for 'm2.'
+[ichecker] process line '-at Apps -a atom-control' ...
+[ichecker] locate atom type 'Apps' ... ok
+[ichecker] instantiate component type 'Apps' ... ok
+[ichecker] check if 'atom-control' is applicable ... yes
+[ichecker] generate invariant by 'atom-control' ... 
+[ichecker] generate invariant by 'atom-control' done
+[ichecker] invariant recorded for 'la1.'
+[ichecker] invariant recorded for 'la0.'
+[ichecker] process line '-ct mlampCompound -a control-reachability' ...
+[ichecker] locate compound type 'mlampCompound' ... ok
+[ichecker] instantiate component type 'mlampCompound' ... ok
+[ichecker] check if 'control-reachability' is applicable ... no
+[ichecker] process invariant specification 'mlamp-scheme.inv' done
+[ichecker] load property 'mlamp-deadlock.pro' ... done
+[ichecker] generate SMT script 'mlamp-scheme-mlamp-deadlock' ... done
+[ichecker] run SMT solver ... 
+valid
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+B
+B
+B
+B
+B
+B
+B
+B
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+C
+C
+C
+C
+
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+

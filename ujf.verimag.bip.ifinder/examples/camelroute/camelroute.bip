@@ -1,0 +1,68 @@
+package camelroute
+
+port type Port()
+
+atom type Route()
+	data string rId
+	data string occi_core_summary
+	data string occi_core_id
+	data string occi_core_title
+	export port Port finish()
+	export port Port on()
+	export port Port s_stop()
+	export port Port end()
+	export port Port off()
+
+	place OFF, ON, WAIT, DONE
+
+	initial to OFF do {}
+	on on from OFF to ON do {}
+	on off from ON to WAIT do {}
+	on end from WAIT to DONE do {}
+	on s_stop from WAIT to DONE do {}
+	on finish from DONE to OFF do {}
+end
+
+atom type Monitor()
+	data string mId
+	data string occi_core_summary
+	data string occi_core_id
+	data string occi_core_title
+	export port Port add()
+	export port Port rm()
+
+	place ON
+
+	initial to ON do {}
+	on add from ON to ON do {}
+	on rm from ON to ON do {}
+end
+
+connector type add_on_root_define(Port p1, Port p2)
+	define p1 p2 
+end
+
+connector type finish_rm_root_define(Port p1, Port p2)
+	define p1 p2 
+end
+
+compound type camelrouteCompound()
+	component Monitor monitor4()
+	component Route r1()
+	component Route r3()
+	component Route r2()
+
+	connector add_on_root_define add_on_root_0(r1.on, monitor4.add)
+
+	connector add_on_root_define add_on_root_1(r3.on, monitor4.add)
+
+	connector add_on_root_define add_on_root_2(r2.on, monitor4.add)
+
+	connector finish_rm_root_define finish_rm_root_0(r1.finish, monitor4.rm)
+
+	connector finish_rm_root_define finish_rm_root_1(r3.finish, monitor4.rm)
+
+	connector finish_rm_root_define finish_rm_root_2(r2.finish, monitor4.rm)
+
+end
+end

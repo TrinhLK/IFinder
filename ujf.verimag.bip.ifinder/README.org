@@ -15,29 +15,29 @@
 
 ** build dependent IFinder/compiler
 
-   $ cd IFinder/compiler/distribution
+   $ cd /home/trinhlk/Downloads/IFinder/compiler/distribution
 
    $ ./wrap.sh
 
 ** build IFinder 
 
-   $ cd IFinder/ujf.verimag.bip.ifinder 
+   $ cd /home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder 
 
    $ ant -lib ../compiler/distribution/lib jar
 
 ** configure executable paths
 
-   $ chmod u+x IFinder/ujf.verimag.bip.ifinder/cli-lib/*.bin 
+   $ chmod u+x /home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/cli-lib/*.bin 
 
-   $ chmod u+x IFinder/ujf.verimag.bip.ifinder/cli-lib/*.so
+   $ chmod u+x /home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/cli-lib/*.so
 
-   $ export PATH=$PATH:IFinder/ujf.verimag.bip.ifinder/cli-lib
+   $ export PATH=$PATH:/home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/cli-lib
 
-   $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:IFinder/ujf.verimag.bip.ifinder/cli-lib
+   $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/cli-lib
 
 ** run IFinder
     
-   $ cd IFinder/ujf.verimag.bip.ifinder/examples/.../
+   $ cd /home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/examples/.../
 
    $ ../../bin/ifinder.sh -h
 
