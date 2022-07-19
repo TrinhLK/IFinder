@@ -14,6 +14,13 @@
        git@gricad-gitlab.univ-grenoble-alpes.fr:verimag/bip/IFinder.git
 
 ** build dependent IFinder/compiler
+   $ sudo apt-get install openjdk-8-jdk
+   
+   $ echo "JAVA_HOME=$(which java)" | sudo tee -a /etc/environment
+   
+   $ source /etc/environment
+
+   $ sudo apt-get install ant cmake
 
    $ cd /home/trinhlk/Downloads/IFinder/compiler/distribution
 
