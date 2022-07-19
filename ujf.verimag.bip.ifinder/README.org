@@ -33,8 +33,9 @@
    $ ant -lib ../compiler/distribution/lib jar
 
 ** configure executable paths
-
-   $ chmod u+x /home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/cli-lib/*.bin 
+   $ cp /home/trinhlk/Downloads/IFinder/compiler/distribution/lib/* /home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/cli-lib
+   
+   $ chmod u+x /*.bin 
 
    $ chmod u+x /home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/cli-lib/*.so
 
@@ -43,8 +44,8 @@
    $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/cli-lib
 
 ** run IFinder
-    
-   $ cd /home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/examples/.../
+
+   $ cd /home/trinhlk/Downloads/IFinder/ujf.verimag.bip.ifinder/examples/an_example
 
    $ ../../bin/ifinder.sh -h
 
